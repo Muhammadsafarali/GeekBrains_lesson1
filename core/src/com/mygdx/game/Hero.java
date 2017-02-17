@@ -4,13 +4,9 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-<<<<<<< HEAD
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import org.w3c.dom.css.Rect;
-=======
-import com.badlogic.gdx.math.Vector2;
->>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
 
 import java.util.Vector;
 
@@ -20,24 +16,17 @@ import java.util.Vector;
 public class Hero {
 
     private final String ship = "ship.png";
-<<<<<<< HEAD
     private static Texture texture;
     private float speed;
     private Vector2 position;
     private int fireRate;
     private int fireCounter;
     private Rectangle rect;
-=======
-    private Texture texture;
-    private float speed;
-    private Vector2 position;
->>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
 
     public Hero() {
         texture = new Texture(ship);
         speed = 10.0f;
         position = new Vector2(100, 100);
-<<<<<<< HEAD
         fireRate = 6;
         fireCounter = 0;
         rect = new Rectangle(position.x, position.y, 80, 60);
@@ -48,12 +37,6 @@ public class Hero {
     }
 
     public void render(SpriteBatch batch) {
-=======
-    }
-
-    public void render(SpriteBatch batch) {
-        update();
->>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
         batch.draw(texture, position.x, position.y);
     }
 
@@ -82,7 +65,6 @@ public class Hero {
                 position.x = 836;
             }
         }
-<<<<<<< HEAD
         if (Gdx.input.isKeyPressed(Input.Keys.P)) {
             fireCounter++;
             if (fireCounter > fireRate) {
@@ -101,8 +83,6 @@ public class Hero {
                 break;
             }
         }
-=======
->>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
     }
 
 }
