@@ -10,8 +10,13 @@ import com.badlogic.gdx.math.Vector2;
 public class Background {
 
     private final String space = "space1.png";
+<<<<<<< HEAD
     private static Texture texture;
     private Vector2 position;
+=======
+    Texture texture;
+    Vector2 position;
+>>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
 
     public Background() {
         texture = new Texture(space);
@@ -19,6 +24,10 @@ public class Background {
     }
 
     public void render(SpriteBatch batch) {
+<<<<<<< HEAD
+=======
+        update();
+>>>>>>> ea9e0533e24bd14542e07c30e7a9e2e7531c1e39
         batch.draw(texture, position.x, position.y);
         batch.draw(texture, 900+position.x, position.y);
     }
